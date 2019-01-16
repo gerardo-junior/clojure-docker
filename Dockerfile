@@ -4,7 +4,7 @@ ARG OPENJDK_VERSION="8"
 
 FROM library/clojure:openjdk-$OPENJDK_VERSION-lein-$LEIN_VERSION-alpine 
 LABEL maintainer="Gerardo Junior <me@gerardo-junior.com>"
-LABEL url="https://github.com/gerardo-junior/clojure-docker"
+LABEL url="https://github.com/gerardo-junior/clojure-docker.git"
 
 ENV USER "clojure"
 ENV WORKDIR "/src"
