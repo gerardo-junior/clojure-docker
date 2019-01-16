@@ -15,7 +15,7 @@ Docker image to run [clojure](https://clojure.org/) projects
 > The project must be in the **/src** container folder 
 ## Tags available
 
-- 1.0.0, stable, latest
+- [1.0.0](https://github.com/gerardo-junior/clojure-docker/blob/1.0.0/Dockerfile), [stable](https://github.com/gerardo-junior/clojure-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/clojure-docker/blob/develop/Dockerfile)
   - [leiningen](https://leiningen.org/) 2.8.3
   - [openjdk](https://openjdk.java.net/) 8
 
