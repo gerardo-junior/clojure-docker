@@ -24,3 +24,6 @@ Docker image to run [clojure](https://clojure.org/) projects
 ```bash
 docker pull gerardojunior/clojure:stable
 ```
+
+### License  
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
