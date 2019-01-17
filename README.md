@@ -25,5 +25,53 @@ Docker image to run [clojure](https://clojure.org/) projects
 docker pull gerardojunior/clojure:stable
 ```
 
+## How to build
+
+to build the image you need install the [docker engine](https://www.docker.com/) only
+
+> You can try building with different versions of software with docker args, for example: LEIN_VERSION=2.8.3
+
+```bash
+git clone https://github.com/gerardo-junior/clojure-docker.git
+cd clojure-docker
+docker build . --tag gerardojunior/clojure
+```
+
+## How to use
+
+##### Only with docker command:
+
+```bash
+# in your project folder
+docker run -it --rm -v $(pwd):/src gerardojunior/clojure:stable [command]
+
+# or docker-compose
+docker-compose run clojure [command]
+```
+##### With [docker-compose](https://docs.docker.com/compose/)
+
+Create the docker-compose.yml file  in your project folder with:
+
+```yml
+# (...)
+
+  clojure:
+    image: gerardojunior/clojure:stable
+    restart: on-failure
+    volumes:
+      - type: bind
+        source: ./
+        target: /src
+
+# (...)
+```
+
+## How to enter image shell
+ 
+```bash
+docker run -it --rm gerardojunior/clojure sh
+# or with docker-compose
+docker-compose run clojure sh
+
 ### License  
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
