@@ -16,8 +16,9 @@ Docker image to run [clojure](https://clojure.org/) projects
 ## Tags available
 
 - [stable](https://github.com/gerardo-junior/clojure-docker/blob/master/Dockerfile), [latest](https://github.com/gerardo-junior/clojure-docker/blob/develop/Dockerfile), [1.0.0](https://github.com/gerardo-junior/clojure-docker/blob/1.0.0/Dockerfile)
-  - [leiningen](https://leiningen.org/) 2.8.3
-  - [openjdk](https://openjdk.java.net/) 8
+    - [library/clojure](https://hub.docker.com/_/clojure) openjdk-8-lein-2.8.3-alpine 
+        - [leiningen](https://leiningen.org/) 2.8.3
+        - [openjdk](https://openjdk.java.net/) 8
 
 ## Come on, do your tests
 
