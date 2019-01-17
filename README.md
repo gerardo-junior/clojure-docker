@@ -4,7 +4,7 @@
     [+] AUTOR:        Gerardo Junior
     [+] SITE:         https://gerardo-junior.com
     [+] EMAIL:        me@gerardo-junior.com
-    [+] GITHUB:       https://github.com/gerardo-junior/clojure-docker
+    [+] GITHUB:       https://github.com/gerardo-junior/clojure-docker.git
     [+] TELEGRAM:     @MrGerardoJunior
 ```
 
