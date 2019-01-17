@@ -2,7 +2,7 @@
 ARG LEIN_VERSION="2.8.3"
 ARG OPENJDK_VERSION="8"
 
-# Base image https://github.com/Quantisan/docker-clojure
+# Base image https://github.com/Quantisan/docker-clojure.git
 FROM library/clojure:openjdk-$OPENJDK_VERSION-lein-$LEIN_VERSION-alpine 
 
 LABEL maintainer="Gerardo Junior <me@gerardo-junior.com>"
