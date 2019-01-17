@@ -32,9 +32,7 @@ to build the image you need install the [docker engine](https://www.docker.com/)
 > You can try building with different versions of software with docker args, for example: LEIN_VERSION=2.8.3
 
 ```bash
-git clone https://github.com/gerardo-junior/clojure-docker.git
-cd clojure-docker
-docker build . --tag gerardojunior/clojure
+docker build https://github.com/gerardo-junior/clojure-docker.git --tag gerardojunior/clojure
 ```
 
 ## How to use
