@@ -5,8 +5,10 @@ if [ -e "$(pwd)/project.clj" ]; then
     /usr/local/bin/lein deps
 fi
 
-if [[ -z "$(which -- $1)" ]]; then
-    /usr/local/bin/lein "$@"
-else
-    exec "$@"
+if [ ! -z "$1" ]; then
+    if [[ -z "$(which -- $1)" ]]; then
+        /usr/local/bin/lein "$@"
+    else
+        exec "$@"
+    fi
 fi
