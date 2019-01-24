@@ -1,8 +1,10 @@
 #!/bin/sh
 sudo chgrp -Rf ${USER} ${WORKDIR}
 
-if [ -e "$(pwd)/project.clj" ]; then
-    /usr/local/bin/lein deps
+if [ ! -d "$(pwd)/target" ]; then
+    if [ -e "$(pwd)/project.clj" ]; then
+        /usr/local/bin/lein deps
+    fi
 fi
 
 if [ ! -z "$1" ]; then
