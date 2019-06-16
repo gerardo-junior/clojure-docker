@@ -1,6 +1,10 @@
 #!/bin/sh
 sudo chgrp -Rf ${USER} ${WORKDIR}
 
+if [ -f "$(pwd)/.env" ]; then
+    export eval $(egrep -v '^#' .env | xargs)
+fi
+
 if [ ! -d "$(pwd)/target" ]; then
     if [ -e "$(pwd)/project.clj" ]; then
         /usr/local/bin/lein deps

@@ -10,6 +10,9 @@ LABEL url="https://github.com/gerardo-junior/clojure-docker.git"
 ENV USER "clojure"
 ENV WORKDIR "/src"
 
+# Configuring a default port for repl server
+ENV LEIN_REPL_PORT 1234
+
 # Creating project directory
 RUN mkdir -p $WORKDIR
 
@@ -28,4 +31,5 @@ RUN chmod -R +x /opt/tools/
 VOLUME [$WORKDIR]
 WORKDIR $WORKDIR
 USER $USER
+EXPOSE $LEIN_REPL_PORT
 ENTRYPOINT ["/bin/sh", "/opt/tools/entrypoint.sh"]
